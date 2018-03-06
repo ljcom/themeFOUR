@@ -4,15 +4,15 @@
 >
   <xsl:output method="xml" indent="yes"/>
   <xsl:template match="/">
-    <link rel="shortcut icon" href="assets/img/favicon.png?v=3"/>
+    <link rel="shortcut icon" href="ophcontent/cdn/material-themes/assets/img/favicon.png?v=3"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="stylesheet" href="assets/css/preload.min.css" />
-    <link rel="stylesheet" href="assets/css/plugins.min.css" />
-    <link rel="stylesheet" href="assets/css/style.light-blue-500.min.css" />
-    <link rel="stylesheet" href="assets/css/width-boxed.min.css" id="ms-boxed" disabled=""/>
+    <link rel="stylesheet" href="ophcontent/cdn/material-themes/assets/css/preload.min.css" />
+    <link rel="stylesheet" href="ophcontent/cdn/material-themes/assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="ophcontent/cdn/material-themes/assets/css/style.light-blue-500.min.css" />
+    <link rel="stylesheet" href="ophcontent/cdn/material-themes/assets/css/width-boxed.min.css" id="ms-boxed" disabled=""/>
     <!--[if lt IE 9]>
-        <script src="assets/js/html5shiv.min.js"></script>
-        <script src="assets/js/respond.min.js"></script>
+        <script src="ophcontent/cdn/material-themes/assets/js/html5shiv.min.js"></script>
+        <script src="ophcontent/cdn/material-themes/assets/js/respond.min.js"></script>
     <![endif]-->
     <a href="javascript:void(0)" class="ms-conf-btn ms-configurator-btn btn-circle btn-circle-raised btn-circle-primary animated rubberBand">
       <ix class="fa fa-gears"></ix>
@@ -221,10 +221,13 @@
         </div>
       </div>
     </div>
-    <script src="assets/js/plugins.min.js"></script>
-    <script src="assets/js/app.min.js"></script>
-    <script src="assets/js/configurator.min.js"></script>
+    
     <script>
+      loadScript('ophcontent/cdn/material-themes/assets/js/plugins.min.js');
+      //loadScript('ophcontent/cdn/material-themes/assets/js/app.min.js');
+      //loadScript('ophcontent/cdn/material-themes/assets/js/configurator.min.js');
+      //loadScript('ophcontent/cdn/material-themes/assets/js/coming.js');
+
       (function(i, s, o, g, r, a, m)
       {
       i['GoogleAnalyticsObject'] = r;
@@ -241,6 +244,6 @@
       ga('create', 'UA-90917746-1', 'auto');
       ga('send', 'pageview');
     </script>
-    <script src="assets/js/coming.js"></script>
+    <script src="ophcontent/cdn/material-themes/assets/js/coming.js"></script>
   </xsl:template>
 </xsl:stylesheet>
