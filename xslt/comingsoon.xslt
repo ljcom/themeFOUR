@@ -244,6 +244,6 @@
       ga('create', 'UA-90917746-1', 'auto');
       ga('send', 'pageview');
     </script>
-    <script src="ophcontent/cdn/material-themes/assets/js/coming.js"></script>
+    <!--<script src="ophcontent/cdn/material-themes/assets/js/coming.js"></script>-->
   </xsl:template>
 </xsl:stylesheet>

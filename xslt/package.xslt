@@ -4,13 +4,13 @@
 >
   <xsl:template match="/">
     <script>
-      loadScript('OPHContent/themes/<xsl:value-of select="/sqroot/header/info/themeFolder" />/assets/js/plugins.min.js');
+      loadScript('OPHContent/cdn/material-theme/assets/js/plugins.min.js');
 
-      loadScript('OPHContent/themes/<xsl:value-of select="/sqroot/header/info/themeFolder" />/assets/js/app.min.js');
+      loadScript('OPHContent/cdn/material-theme/assets/js/app.min.js');
 
-      loadScript('OPHContent/themes/<xsl:value-of select="/sqroot/header/info/themeFolder" />/assets/js/home-generic-6.js');
+      loadScript('OPHContent/cdn/material-theme/assets/js/home-generic-6.js');
 
-      loadScript('OPHContent/themes/<xsl:value-of select="/sqroot/header/info/themeFolder" />/assets/custom-me.js');
+      loadScript('OPHContent/themes/themeFOUR/custom-me.js');
 
       loadContent(1);
 
@@ -112,7 +112,7 @@
               </button>
               <div class="modal-title text-center">
                 <!--<span class="ms-logo ms-logo-white ms-logo-sm mr-1" style="font-size:12px;">MX4</span>-->
-                <img  src="OPHContent/themes/{/sqroot/header/info/themeFolder}/assets/img/logo.png" style="max-width:30px; margin-right:10px;" />
+                <img  src="OPHContent/themes/themeFOUR/images/logo.png" style="max-width:30px; margin-right:10px;" />
                 <h3 class="no-m ms-site-title">
                   <span>Operahouse</span>Systems                 
                 </h3>
@@ -126,9 +126,9 @@
         <div class="container container-full">
           <div class="ms-title">
             <a href="javascript:void(0)">
-              <!-- <img src="OPHContent/themes/{/sqroot/header/info/themeFolder}/assets/img/demo/logo-header.png" alt=""> -->
+              <!-- <img src="OPHContent/themes/themeFOUR/images/demo/logo-header.png" alt=""> -->
               <!--<span class="ms-logo animated zoomInDown animation-delay-5" style="font-size:18px;">OPH</span>-->
-              <img class="animated zoomInDown animation-delay-5" src="OPHContent/themes/{/sqroot/header/info/themeFolder}/assets/img/logo.png" style="max-width:70px;" />
+              <img class="animated zoomInDown animation-delay-5" src="OPHContent/themes/themeFOUR/images/logo.png" style="max-width:70px;" />
               <h1 class="animated fadeInRight animation-delay-6">
                 <span>Operahouse</span>Systems               
               </h1>
@@ -175,7 +175,7 @@
         <div class="container container-full">
           <div class="navbar-header">
             <a class="navbar-brand" href="javascript:void(0)">
-               <img src="OPHContent/themes/{/sqroot/header/info/themeFolder}/assets/img/logo.png" style="width:30px" alt=""/> 
+               <img src="OPHContent/themes/themeFOUR/images/logo.png" style="width:30px" alt=""/> 
               <!--<span class="ms-logo ms-logo-sm" style="font-size:12px;">MX4</span>-->
               <span class="ms-title">
                 <strong>Operahouse</strong>

@@ -51,7 +51,7 @@
     <div class="ms-hero-page-override ms-hero-img-coffee ms-bg-fixed ms-hero-bg-primary">
       <div class="container">
         <div class="text-center mt-2">
-          <img src="ophcontent/themes/themeoperahouse/assets/img/useracct.png" alt="..." class="ms-avatar-hero animated zoomIn animation-delay-7" />
+          <img src="ophcontent/cdn/material-theme/assets/img/useracct.png" alt="..." class="ms-avatar-hero animated zoomIn animation-delay-7" />
           <h1 class="color-white mt-4 animated fadeInUp animation-delay-10">
             <xsl:value-of select="form/formPages/formPage[@pageNo=1]/formSections/formSection/formCols/formCol/formRows/formRow/fields/field[@fieldName='AccountId']/textBox/value/."/>
           </h1>

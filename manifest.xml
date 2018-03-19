@@ -1,9 +1,9 @@
 <sqroot>
   <manifest>
     <cssFile>https://fonts.googleapis.com/icon?family=Material+Icons</cssFile>
-    <cssFile>OPHContent/cdn/material-themes/assets/css/preload.min.css</cssFile>
-    <cssFile>OPHContent/cdn/material-themes/assets/css/plugins.min.css</cssFile>
-    <cssFile>OPHContent/cdn/material-themes/assets/css/style.light-blue-500.min.css</cssFile>
+    <cssFile>OPHContent/cdn/material-theme/assets/css/preload.min.css</cssFile>
+    <cssFile>OPHContent/cdn/material-theme/assets/css/plugins.min.css</cssFile>
+    <cssFile>OPHContent/cdn/material-theme/assets/css/style.light-blue-500.min.css</cssFile>
     <cssFile>OPHContent/cdn/select2/select2.min.css</cssFile>
     <cssFile>OPHContent/themes/themeFOUR/custom-me.css</cssFile>
     <jsFile>OPHContent/themes/themeFOUR/custom-me.js</jsFile>

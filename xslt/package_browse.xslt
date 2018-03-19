@@ -2,9 +2,9 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
   <xsl:template match="/">
     <script>
-      loadScript('OPHContent/themes/<xsl:value-of select="/sqroot/header/info/themeFolder" />/assets/js/app.min.js');
+      loadScript('OPHContent/cdn/material-theme/assets/js/app.min.js');
 
-      loadScript('OPHContent/themes/<xsl:value-of select="/sqroot/header/info/themeFolder" />/assets/js/ecommerce.js');
+      loadScript('OPHContent/cdn/material-theme/assets/js/ecommerce.js');
     </script>
     <div class="ms-hero-page ms-hero-img-city2 ms-hero-bg-info mb-6">
       <div class="text-center color-white mt-6 mb-6 index-1">

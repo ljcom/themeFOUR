@@ -3,7 +3,7 @@
     xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
   <xsl:template match="/">
     <script>
-      loadScript('OPHContent/themes/themeOne/scripts/select2/select2.full.min.js');
+      loadScript('OPHContent/cdn/select2/select2.full.min.js');
 
       var deferreds = [];
     </script>
