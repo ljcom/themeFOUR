@@ -57,7 +57,7 @@ function loadContent2(id, f) {
     var xmldoc = 'OPHCore/api/default.aspx?mode=browse' + '&code=' + code + '&sqlfilter=' + sqlfilter + '&bSearchText=' + searchText + '&bpageno=' + bpageno + '&showpage=' + showpage + '&sortOrder=' + sortOrder + '&date=' + getUnique();
 
     var divname = [id];
-    var xsldoc = ['OPHContent/themes/themeOPERAHOUSE/xslt/' + filename + '.xslt'];
+    var xsldoc = ['OPHContent/themes/themeFOUR/xslt/' + filename + '.xslt'];
 
     pushTheme(divname, xmldoc, xsldoc, true);
     //showXML(id, xmldoc, xsldoc, true, true, function () {
@@ -71,7 +71,7 @@ function LoadNewPartView(filename, id, code, GUID) {
     var xmldoc = 'OPHCore/api/default.aspx?mode=view' + '&code=' + code + '&GUID=' + GUID + '&date=' + getUnique();
 
     var divname = [id];
-    var xsldoc = ['OPHContent/themes/themeOPERAHOUSE/xslt/' + filename + '.xslt'];
+    var xsldoc = ['OPHContent/themes/themeFOUR/xslt/' + filename + '.xslt'];
 
     pushTheme(divname, xmldoc, xsldoc, true);
     //showXML(id, xmldoc, xsldoc, true, true, function () {

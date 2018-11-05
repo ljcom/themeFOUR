@@ -2,6 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl"
 >
+  <!--<xsl:variable name="primarymenu"></xsl:variable>-->
   <xsl:template match="/">
     <script>
       loadScript('OPHContent/cdn/material-theme/assets/js/plugins.min.js');
@@ -128,10 +129,10 @@
             <a href="javascript:void(0)">
               <!-- <img src="OPHContent/themes/themeFOUR/images/demo/logo-header.png" alt=""> -->
               <!--<span class="ms-logo animated zoomInDown animation-delay-5" style="font-size:18px;">OPH</span>-->
-              <img class="animated zoomInDown animation-delay-5" src="OPHContent/themes/themeFOUR/images/logo.png" style="max-width:70px;" />
-              <h1 class="animated fadeInRight animation-delay-6">
+              <img class="animated zoomInDown animation-delay-5" src="OPHContent/themes/themeFOUR/images/logo.png" style="max-width:350px; margin-top:20px;" />
+              <!--<h1 class="animated fadeInRight animation-delay-6">
                 <span>Operahouse</span>Systems               
-              </h1>
+              </h1>-->
             </a>
           </div>
           <div class="header-right">
@@ -175,12 +176,12 @@
         <div class="container container-full">
           <div class="navbar-header">
             <a class="navbar-brand" href="javascript:void(0)">
-               <img src="OPHContent/themes/themeFOUR/images/logo.png" style="width:30px" alt=""/> 
+               <img src="OPHContent/themes/themeFOUR/images/logo.png" style="width:200px" alt=""/> 
               <!--<span class="ms-logo ms-logo-sm" style="font-size:12px;">MX4</span>-->
-              <span class="ms-title">
+              <!--<span class="ms-title">
                 <strong>Operahouse</strong>
                 Systems
-              </span>
+              </span>-->
             </a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">

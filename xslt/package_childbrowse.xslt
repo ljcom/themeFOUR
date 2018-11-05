@@ -15,18 +15,18 @@
         </div>
       </div>
     </div>
-    <xsl:apply-templates select="sqroot/body/bodyContent/browse/content/row[@code = 'packagesection']"/>
-    <xsl:apply-templates select="sqroot/body/bodyContent/browse/content/row[@code = 'packagerelated']"/>
+    <xsl:apply-templates select="sqroot/body/bodyContent/browse/content/row[@code = 'PackageSection']"/>
+    <xsl:apply-templates select="sqroot/body/bodyContent/browse/content/row[@code = 'PackageRelated']"/>
 
     <xsl:if test="sqroot/body/bodyContent/browse/info/code ='PackagePrice'">
-      <div class="ms-hero-page-override ms-hero-img-city ms-hero-bg-primary no-pb overflow-hidden ms-bg-fixed mt-6">
+      <div class="ms-hero-page-override ms-hero-img-city ms-hero-bg-primary no-pb overflow-hidden ms-bg-fixed mt-6" id="pricesection">
         <div class="container">
           <div class="text-center mb-6">
             <h2 class="uppercase  color-white animated fadeInUp animation-delay-7">See our subscription plans</h2>
             <p class="lead uppercase  color-white animated fadeInUp animation-delay-7">Surprise with our unique features</p>
           </div>
           <div class="row">
-            <xsl:apply-templates select="sqroot/body/bodyContent/browse/content/row[@code = 'packageprice']"/>
+            <xsl:apply-templates select="sqroot/body/bodyContent/browse/content/row[@code = 'PackagePrice']"/>
           </div>
         </div>
       </div>
@@ -34,9 +34,9 @@
   </xsl:template>
 
   <!--package section-->
-  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'packagesection']">
+  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'PackageSection']">
     <xsl:if test="(fields/field[@caption = 'sectionAlign']/.)='1 - Right'">
-      <section class="wrap mt-6 wow fadeInRight animation-delay-4" style="padding:0">
+      <section class="wrap mt-6 wow fadeInRight animation-delay-4" style="padding:0" id="featuresection">
         <div class="container">
           <div class="panel-body">
             <div class="tab-content mt-4">
@@ -105,7 +105,7 @@
   </xsl:template>
 
 
-  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'packagesection']/fields/field">
+  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'PackageSection']/fields/field">
     <xsl:choose>
       <xsl:when test="@caption = 'sectionTitle'">
           <h2 class="no-mt color-primary no-mb"><xsl:value-of select ="."/></h2>
@@ -125,14 +125,14 @@
   </xsl:template>
 
 
-  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'packagesection']/fields/field[@caption = 'sectionImg']">
+  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'PackageSection']/fields/field[@caption = 'sectionImg']">
     <img class="img-responsive animated zoomInDown animation-delay-3" src="{.}" style="display:inline;" />
   </xsl:template>
  <!--tutup pacakage section-->
 
   <!--package related-->
-  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'packagerelated']">
-    <div class="container mt-6">
+  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'PackageRelated']">
+    <div class="container mt-6" id="integratedsection">
       <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Fully integrated with Operahouse Apps</h2>
       
       <div class="row">
@@ -152,7 +152,7 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'packagerelated']/fields/field">
+  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'PackageRelated']/fields/field">
     <xsl:choose>
       <xsl:when test="@caption = 'PackageGUID'">
         <h4 class="">
@@ -167,7 +167,7 @@
     </xsl:choose>
   </xsl:template>
 
-  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'packagerelated']/fields/field[@caption = 'Icon']">
+  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'PackageRelated']/fields/field[@caption = 'Icon']">
     <i class="zmdi {.}"></i>
   </xsl:template>
 
@@ -175,7 +175,7 @@
   
   <!--package price-->
 
-  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'packageprice']">
+  <xsl:template match="sqroot/body/bodyContent/browse/content/row[@code = 'PackagePrice']">
   
         <div class="col-md-4 price-table price-table-info animated zoomInDown animation-delay-7">
           <header class="price-table-header">

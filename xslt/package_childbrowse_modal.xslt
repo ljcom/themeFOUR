@@ -2,7 +2,8 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
   <xsl:template match="/">
     <script>
-      loadScript('OPHContent/themes/themeOne/scripts/select2/select2.full.min.js');
+      loadScript('OPHContent/cdn/select2/select2.full.min.js');
+
 
       var deferreds = [];
     </script>
@@ -284,23 +285,24 @@
       <xsl:if test="not(value) and (../@fieldName)='Package'">
 
         if (getCookie('packageguid') &amp;&amp; getCookie('packageguid') != 'undefined'){
-        deferreds.push(
-        autosuggestSetValue('<xsl:value-of select="../@fieldName"/>','<xsl:value-of select="/sqroot/body/bodyContent/form/info/code/."/>','<xsl:value-of select='../@fieldName'/>', getCookie('packageguid'), '<xsl:value-of select='whereFields/wf1'/>', '<xsl:value-of select='whereFields/wf2'/>')
-        );
+        //deferreds.push(
+        autosuggestSetValue(deferreds,'<xsl:value-of select="../@fieldName"/>','<xsl:value-of select="/sqroot/body/bodyContent/form/info/code/."/>','<xsl:value-of select='../@fieldName'/>', getCookie('packageguid'), '<xsl:value-of select='whereFields/wf1'/>', '<xsl:value-of select='whereFields/wf2'/>')
+        //);
+        
         }
       </xsl:if>
       <xsl:if test="not(value) and (../@fieldName)='PackagePrice'">
 
         if (getCookie('planguid') &amp;&amp; getCookie('planguid') != 'undefined'){
-        deferreds.push(
-        autosuggestSetValue('<xsl:value-of select="../@fieldName"/>','<xsl:value-of select="/sqroot/body/bodyContent/form/info/code/."/>','<xsl:value-of select='../@fieldName'/>', getCookie('planguid'), '<xsl:value-of select='whereFields/wf1'/>', '<xsl:value-of select='whereFields/wf2'/>')
-        );
+        //deferreds.push(
+        autosuggestSetValue(deferreds,'<xsl:value-of select="../@fieldName"/>','<xsl:value-of select="/sqroot/body/bodyContent/form/info/code/."/>','<xsl:value-of select='../@fieldName'/>', getCookie('planguid'), '<xsl:value-of select='whereFields/wf1'/>', '<xsl:value-of select='whereFields/wf2'/>')
+        //);
         }
       </xsl:if>
       <xsl:if test="value!=''">
-        deferreds.push(
-        autosuggestSetValue('<xsl:value-of select="../@fieldName"/>','<xsl:value-of select="/sqroot/body/bodyContent/form/info/code/."/>','<xsl:value-of select='../@fieldName'/>', '<xsl:value-of select='value'/>', '<xsl:value-of select='whereFields/wf1'/>', '<xsl:value-of select='whereFields/wf2'/>')
-        );
+        //deferreds.push(
+        autosuggestSetValue(deferreds,'<xsl:value-of select="../@fieldName"/>','<xsl:value-of select="/sqroot/body/bodyContent/form/info/code/."/>','<xsl:value-of select='../@fieldName'/>', '<xsl:value-of select='value'/>', '<xsl:value-of select='whereFields/wf1'/>', '<xsl:value-of select='whereFields/wf2'/>')
+        //);
       </xsl:if>
     </script>
   </xsl:template>

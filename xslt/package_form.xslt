@@ -12,7 +12,7 @@
 
   <xsl:template match="sqroot/body/bodyContent">
     <!--this is slider-->
-    <div class="ms-hero-page-override ms-hero-img-city ms-hero-bg-primary no-pb overflow-hidden ms-bg-fixed">
+    <div class="ms-hero-page-override ms-hero-img-city ms-hero-bg-primary no-pb overflow-hidden ms-bg-fixed" id="homesection">
       <div class="container">
         <div class="text-center color-white">
           <xsl:apply-templates select="form"/>
@@ -76,7 +76,7 @@
         <p class="lead lead-lg color-white text-center center-block mt-2 mw-800 fw-300 animated fadeInUp animation-delay-7">
           <xsl:apply-templates select="fields"/>
         </p>
-        <a href="index.aspx?code=orders&amp;launch=orders&amp;package={/sqroot/body/bodyContent/form/info/GUID/.}" class="btn btn-raised btn-warning  animated fadeInUp animation-delay-7" style="margin-top:20px;">
+        <a href="index.aspx?code=account&amp;guid=00000000-0000-0000-0000-000000000000" class="btn btn-raised btn-warning  animated fadeInUp animation-delay-7" style="margin-top:20px;">
           <i class="zmdi zmdi-account-add"></i>  
           Start Free Trial
         </a>
@@ -122,9 +122,6 @@
       <input type="hidden" id="parent{code/.}" value="{parentkey/.}"/>
       <input type="hidden" id="PKName" value="{parentkey/.}"/>
       <script>
-
-        //xmldoc = "OPHCORE/api/default.aspx?code=<xsl:value-of select ="code/."/>&amp;mode=browse&amp;sqlFilter=<xsl:value-of select ="parentkey/."/>='<xsl:value-of select ="/sqroot/body/bodyContent/form/info/GUID/."/>'"
-        //showXML('child<xsl:value-of select ="code/."/>', xmldoc, xsldoc + "_childBrowse.xslt", true, true, function () {});
 
         var code='<xsl:value-of select ="code/."/>';
         var parentKey='<xsl:value-of select ="parentkey/."/>';
