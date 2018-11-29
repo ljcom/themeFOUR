@@ -13,11 +13,14 @@
       var userguid = '<xsl:value-of select="/sqroot/header/info/user/userGUID" />';
       if (userguid == ''){
       var url = 'index.aspx?code=register&amp;launch=orders&amp;package='+getQueryVariable("package")
-      $("#notiModal").modal();
-      document.getElementById("notiModalText").innerHTML = 'You need to login or register to order';
-      document.getElementById("notiModalLabel").innerHTML = 'Warning!';
-      document.getElementById("notiModalFooter").innerHTML = '<button type="button" class="btn btn-default" onclick="goToAnotherPage(url)">Login</button>';
-      document.getElementById("notiModalClose").style.display = 'none';
+      //$("#notiModal").modal();
+      //document.getElementById("notiModalText").innerHTML = 'You need to login or register to order';
+      //document.getElementById("notiModalLabel").innerHTML = 'Warning!';
+      //document.getElementById("notiModalFooter").innerHTML = '<button type="button" class="btn btn-default" onclick="goToAnotherPage(url)">Login</button>';
+      //document.getElementById("notiModalClose").style.display = 'none';
+      setCookie('lastPar', document.URL, 0, 1, 0);
+      window.location.href = 'index.aspx?code=register'
+
       }else{
       setCookie('bSearchText', '<xsl:value-of select="/sqroot/header/info/user/userGUID" />', 1, 0, 0);
       setCookie('lastPar', document.URL, 0, 1, 0);

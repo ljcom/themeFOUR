@@ -87,6 +87,6 @@ input[type=text].disabled-input, input[type=password].disabled-input
  width:100%;
     }
 *::-webkit-input-placeholder {
-    color: #dddddd !important;
+    color: #aaaaaa !important;
     font-size:13px !important;
 }

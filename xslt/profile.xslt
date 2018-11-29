@@ -18,11 +18,13 @@
       document.getElementById("notiModalLabel").innerHTML = 'Warning!';
       document.getElementById("notiModalFooter").innerHTML = '<button type="button" class="btn btn-default" onclick="goToAnotherPage(url)">Login</button>';
       document.getElementById("notiModalClose").style.display = 'none';
-      $('#notiModal').show().delay(3000);
-      window.location = 'index.aspx?code=register';
+      //$('#notiModal').show().delay(3000);
+      //window.location = 'index.aspx?code=register';
+
+      window.location.href = 'index.aspx?code=register'
       }else{
       setCookie('lastPar', document.URL, 0, 1, 0);
-        if (getGUID() != '<xsl:value-of select="/sqroot/header/info/user/userGUID" />'){
+      if (getGUID().toUpperCase() != '<xsl:value-of select="/sqroot/header/info/user/userGUID" />'){
          window.location.href = 'index.aspx?code=userprofile&amp;GUID=<xsl:value-of select="/sqroot/header/info/user/userGUID" />'
         }else{
           loadContent(1);
