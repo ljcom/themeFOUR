@@ -6,6 +6,9 @@
     <cssFile>OPHContent/cdn/material-theme/assets/css/style.light-blue-500.min.css</cssFile>
     <cssFile>OPHContent/cdn/select2/select2.min.css</cssFile>
     <cssFile>OPHContent/themes/themeFOUR/custom-me.css</cssFile>
+    <jsFile>OPHContent/cdn/material-theme/assets/js/plugins.min.js</jsFile>
+    <jsFile>OPHContent/cdn/material-theme/assets/js/app.min.js</jsFile>
     <jsFile>OPHContent/themes/themeFOUR/custom-me.js</jsFile>
+    <jsFile>OPHContent/cdn/material-theme/assets/js/home-generic-6.js</jsFile>
   </manifest>
 </sqroot>
